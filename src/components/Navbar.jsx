@@ -16,7 +16,7 @@ const NavbarItem = ({ icon, text }) => {
 
 const Navbar = () => {
     return (
-        <div className='w-full h-[70px] fixed bottom-0 flex justify-center bg-alt shadow-[0px -6px 12px 0px #1E1E1E40]'>
+        <div className='w-full h-[70px] fixed bottom-0 lg:relative xl:relative md:relative flex justify-center bg-alt shadow-[0px -6px 12px 0px #1E1E1E40]'>
             <div className='w-[300px] h-auto min-h-[49px] justify-between flex flex-row shadow-[0px 2px 8px 0px #1F1F1F40]'>
                 {navLinks.map((item, index) => (
                     <NavbarItem key={index} icon={item.icon} text={item.label} />
