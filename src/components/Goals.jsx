@@ -89,12 +89,12 @@ const Swiper = ({ onSwipe }) => {
 
 const Collapse = ({ onCollapse }) => {
     return (
-        <div className='w-auto min-w-[312px] h-auto min-h-[50px] flex flex-col items-center mt-3'>
+        <div className='w-auto min-w-[312px] h-auto min-h-[50px] flex flex-col items-center mt-1'>
             <span className='font-montserrat text-[14px] font-semibold leading-[17.07px] tracking-[0.01em] text-center text-[#FFFFFF]'>
                 All goals are now visible!
             </span>
             <button
-                className='mt-2 px-4 py-2 bg-[#D15439] rounded-full text-[#FFFFFF] text-[12px]'
+                className='mt-1 px-4 py-2 bg-[#D15439] rounded-full text-[#FFFFFF] text-[12px]'
                 onClick={onCollapse}
             >
                 Collapse
