@@ -36,6 +36,20 @@ const initialState = [
         tickColor: "#5A92CB",
         ticked: false,
     },
+    {
+        id: 6,
+        label: "Drink 3L water",
+        icon: "/assets/water.svg",
+        tickColor: "#5A92CB",
+        ticked: false,
+    },
+    {
+        id: 7,
+        label: "Drink 3L water",
+        icon: "/assets/water.svg",
+        tickColor: "#5A92CB",
+        ticked: false,
+    },
 ];
 
 const goalsSlice = createSlice({
