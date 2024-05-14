@@ -27,13 +27,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-/*
-width: 14.32px;
-height: 21.48px;
-top: 7.33px;
-left: 2.04px;
-gap: 0px;
-opacity: 0px;
-
-*/

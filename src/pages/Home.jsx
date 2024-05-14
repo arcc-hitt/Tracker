@@ -5,7 +5,7 @@ import Goals from '../components/Goals'
 
 const Home = () => {
   return (
-    <div>
+    <div className="pb-[70px]">
       <Progress />
       <Goals />
       <Navbar />

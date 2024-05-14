@@ -33,17 +33,38 @@ const Goal = ({ goal, toggleTick }) => {
     );
 };
 
+/*
+width: 312px;
+height: 50px;
+gap: 0px;
+border-radius: 38.03px 0px 0px 0px;
+opacity: 0px;
+box-shadow: 0px 1.55px 17.07px 0px #1115332E;
+
+*/
+
+const Swiper = ({ }) => {
+    return (
+        <div className='w-[312px] h-[50px] rounded-[38.03px] bg-[#D15439] shadow-[0px 1.55px 17.07px 0px #1115332E]'>
+
+        </div>
+    );
+};
+
 const Goals = () => {
     const goals = useSelector((state) => state.goals);
     const dispatch = useDispatch();
 
     return (
-        <div className='w-auto min-w-[312px] h-auto min-h-[475px] gap-4'>
+        <div className='w-auto min-w-[312px] h-auto min-h-[475px] gap-4 flex flex-col items-center mt-3'>
             <Header />
             <div className='w-auto min-w-[312px] h-auto min-h-[365px] gap-[10px] flex flex-col justify-between items-center'>
                 {goals.map((goal) => (
                     <Goal key={goal.id} goal={goal} toggleTick={() => dispatch(toggleTick(goal.id))} />
                 ))}
+            </div>
+            <div>
+                <Swiper />
             </div>
         </div>
     );

@@ -13,20 +13,6 @@ const ProgressBar = ({ progress }) => {
     );
 };
 
-/*
-width: 48.02px;
-height: 47.68px;
-top: 12.64px;
-left: 17px;
-width: 31.28px;
-height: 30.77px;
-top: 21.09px;
-left: 25.18px;
-gap: 0px;
-opacity: 0px;
-
-*/
-
 const Progress = () => {
     const goals = useSelector((state) => state.goals);
     const completedGoals = goals.filter(goal => goal.ticked).length;
