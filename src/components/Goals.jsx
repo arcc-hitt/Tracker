@@ -34,62 +34,6 @@ const Goal = ({ goal, toggleTick }) => {
     );
 };
 
-/*
-width: 312px;
-height: 50px;
-gap: 0px;
-border-radius: 38.03px 0px 0px 0px;
-opacity: 0px;
-box-shadow: 0px 1.55px 17.07px 0px #1115332E;
-
-width: Fixed (45.01px)px;
-height: Hug (18.63px)px;
-top: 441px;
-left: 254.57px;
-gap: 0px;
-opacity: 0px;
-
-width: 40px;
-height: 40px;
-top: 430px;
-left: 4.66px;
-gap: 0px;
-opacity: 0px;
-
-background: linear-gradient(223.1deg, #E1DFE3 17.36%, #FAF6FF 80.35%);
-
-width: 30px;
-height: 7px;
-top: 447px;
-left: 10px;
-gap: 0px;
-opacity: 0px;
-
-font-family: Montserrat;
-font-size: 10px;
-font-weight: 700;
-line-height: 12.19px;
-letter-spacing: 0.01em;
-text-align: center;
-
-background: #D15439;
-
-width: 149px;
-height: 10px;
-top: 445px;
-left: 81px;
-gap: 0px;
-opacity: 0px;
-
-font-family: Montserrat;
-font-size: 14px;
-font-weight: 600;
-line-height: 17.07px;
-letter-spacing: 0.01em;
-text-align: center;
-
-*/
-
 const Swiper = ({ }) => {
     return (
         <div className='w-[312px] h-[50px] rounded-[38.03px] bg-[#D15439] shadow-[0px 1.55px 17.07px 0px #1115332E] flex justify-between items-center py-1 pl-1 pr-3'>
