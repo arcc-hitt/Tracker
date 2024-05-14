@@ -16,12 +16,3 @@ const Progress = () => {
 }
 
 export default Progress
-
-/*
-font-family: DM Sans;
-font-size: 12px;
-font-weight: 400;
-line-height: 18.55px;
-text-align: left;
-
-*/
