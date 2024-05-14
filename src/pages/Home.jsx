@@ -6,7 +6,7 @@ import Graph from '../components/Graph'
 
 const Home = () => {
   return (
-    <div className="pb-[70px]">
+    <div className="flex flex-col justify-center items-center space-y-4 pb-[70px]">
       <Progress />
       <Goals />
       <Graph />
