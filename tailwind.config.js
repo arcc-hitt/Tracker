@@ -10,6 +10,9 @@ export default {
       navText: "#B5B5B5",
     },
     extend: {
+      backgroundImage: {
+        'custom-radial': 'radial-gradient(90.89% 1661.25% at 100% 123.35%, #0E77D9 0%, #7DA7CE 100%)',
+      },
       
     },
   },
