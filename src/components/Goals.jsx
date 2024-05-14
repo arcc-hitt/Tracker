@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import { toggleTick } from '../state';
 import { useDispatch, useSelector } from 'react-redux';
+import { arrows } from '../constants';
 
 const Goal = ({ goal, toggleTick }) => {
     return (
@@ -41,12 +42,72 @@ border-radius: 38.03px 0px 0px 0px;
 opacity: 0px;
 box-shadow: 0px 1.55px 17.07px 0px #1115332E;
 
+width: Fixed (45.01px)px;
+height: Hug (18.63px)px;
+top: 441px;
+left: 254.57px;
+gap: 0px;
+opacity: 0px;
+
+width: 40px;
+height: 40px;
+top: 430px;
+left: 4.66px;
+gap: 0px;
+opacity: 0px;
+
+background: linear-gradient(223.1deg, #E1DFE3 17.36%, #FAF6FF 80.35%);
+
+width: 30px;
+height: 7px;
+top: 447px;
+left: 10px;
+gap: 0px;
+opacity: 0px;
+
+font-family: Montserrat;
+font-size: 10px;
+font-weight: 700;
+line-height: 12.19px;
+letter-spacing: 0.01em;
+text-align: center;
+
+background: #D15439;
+
+width: 149px;
+height: 10px;
+top: 445px;
+left: 81px;
+gap: 0px;
+opacity: 0px;
+
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 600;
+line-height: 17.07px;
+letter-spacing: 0.01em;
+text-align: center;
+
 */
 
 const Swiper = ({ }) => {
     return (
-        <div className='w-[312px] h-[50px] rounded-[38.03px] bg-[#D15439] shadow-[0px 1.55px 17.07px 0px #1115332E]'>
-
+        <div className='w-[312px] h-[50px] rounded-[38.03px] bg-[#D15439] shadow-[0px 1.55px 17.07px 0px #1115332E] flex justify-between items-center py-1 pl-1 pr-3'>
+            <div className='w-[40px] h-[40px] rounded-full bg-custom-gradient flex justify-center items-center'>
+                <span className='w-[30px] h-auto min-h-[7px] font-montserrat text-[10px] font-bold leading-[12.19px] tracking-[0.01em] text-center text-[#D15439]'>
+                    Track
+                </span>
+            </div>
+            <div className='w-[149px] h-[10px] flex justify-center items-center'>
+                <span className='font-montserrat text-[14px] font-semibold leading-[17.07px] tracking-[0.01em] text-center text-[#FFFFFF]'>
+                    Swipe to track all
+                </span>
+            </div>
+            <div className='w-[45.01px] h-auto min-h-[50px] flex justify-between items-center'>
+                {arrows.map((arrow, index) => (
+                    <img key={index} src={arrow.path} alt="arrow" />
+                ))}
+            </div>
         </div>
     );
 };

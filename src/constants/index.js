@@ -20,3 +20,9 @@ export const navLinks = [
       icon: "/assets/graph.svg",
     },
   ];
+
+export const arrows = [
+  {path: "/assets/arrow_light.svg"},
+  {path: "/assets/arrow_medium.svg"},
+  {path: "/assets/arrow_dark.svg"},
+];
